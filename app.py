@@ -53,7 +53,7 @@ def delete_old_entries():
     conn.close()
 
 def get_db():
-    return sqlite3.connect("database.db")
+    return sqlite3.connect("database.db", check_same_thread=False)
 
 # Database
 def init_db():
