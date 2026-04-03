@@ -1,0 +1,117 @@
+/* 🌐 Base */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f2f2f2;
+}
+
+/* 🔝 Top Image (Homepage only) */
+.top-image img {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* 📱 Default App Layout (Homepage & Dashboard) */
+.app {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+/* 🔐 Centered Pages (Login & Register ONLY) */
+.center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* 💳 Card Design */
+.card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 25px;
+    width: 330px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* 🧾 Headings */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* ⌨️ Inputs */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* 🔘 Buttons */
+button {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* 📊 Tables */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th {
+    background: #2575fc;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* 🟢 Allow Button */
+button.allow {
+    background: green;
+}
+
+/* 🔴 Reject Button */
+button.reject {
+    background: red;
+}
+.faculty-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 120px; /* pushes box downward */
+}
