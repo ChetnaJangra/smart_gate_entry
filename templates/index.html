@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+
+<body>
+
+<div class="top-image">
+    <img src="{{ url_for('static', filename='gate.png') }}">
+</div>
+
+<div class="app">
+    <div class="card">
+
+        <h2>🚗 Smart Gate Entry</h2>
+        <p>Secure & Smart Access System</p>
+
+        <a href="/faculty"><button>👨‍🏫 Faculty</button></a>
+        <a href="/guard"><button>🛡️ Guard</button></a>
+
+    </div>
+</div>
+
+</body>
+</html>

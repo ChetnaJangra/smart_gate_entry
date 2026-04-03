@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/static/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<div class="app">
+<div class="card">
+
+<h2>📋 Dashboard</h2>
+
+<form method="POST">
+<input name="car_number" placeholder="🚗 Car Number">
+<input type="time" name="time">
+<button>Add Entry</button>
+</form>
+
+</div>
+</div>
+
+<table>
+<tr>
+<th>Car</th>
+<th>Time</th>
+<th>Status</th>
+<th>Guard</th>
+</tr>
+
+{% for car in cars %}
+<tr>
+<td>{{car[0]}}</td>
+<td>{{car[1]}}</td>
+<td>{{car[2]}}</td>
+<td>{{car[3] if car[3] else "Pending"}}</td>
+</tr>
+{% endfor %}
+</table>

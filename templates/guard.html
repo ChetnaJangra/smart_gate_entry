@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/static/style.css">
+
+<h2 style="text-align:center;">Guard Panel</h2>
+
+<table>
+<tr>
+<th>Car</th>
+<th>Time</th>
+<th>Faculty</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+{% for car in cars %}
+<tr>
+<td>{{car[1]}}</td>
+<td>{{car[2]}}</td>
+<td>{{car[4]}}</td>
+<td>{{car[3]}}</td>
+<td>
+<a href="/update/{{car[0]}}/Allowed">
+    <button style="background: green;">✔ Allow</button>
+</a>
+
+<a href="/update/{{car[0]}}/Rejected">
+    <button style="background: red;">✖ Reject</button>
+</a>
+</td>
+</tr>
+{% endfor %}
+</table>
+
+<script>
+setInterval(()=>{location.reload();},5000);
+</script>
